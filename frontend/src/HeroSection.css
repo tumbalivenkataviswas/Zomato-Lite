@@ -1,0 +1,76 @@
+.hero-section {
+    background-image: url('./p.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: whitesmoke;
+    text-align: center;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 2vh;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.search-bar {
+    display: flex;
+    background: transparent; /* Translucent background */
+    border-radius: 15vh;
+    overflow: hidden;
+    width: 50%; /* Adjust width as needed */
+    max-width: 150vh;
+    margin-bottom: 1em; /* Space between search bar and filters */
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 1.3vh 5vh;
+    border: none;
+    border-radius: 15vh 0 0 15vh;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 1.3vh 5vh;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 17vh 17vh 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: white;
+    color: #ff6347;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-group {
+    margin: 0.5em;
+}
+
+.filter-group label {
+    margin-right: 0.5em;
+}

@@ -1,0 +1,147 @@
+/* Container for the entire restaurant list */
+.restaurant-list {
+    overflow: hidden; /* Hide any overflow caused by the slider */
+}
+
+/* Styling for the carousel container */
+.restaurant-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #f5f5f5; /* Light background color */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Styling for individual restaurant cards */
+.restaurant-card {
+    position: relative;
+    margin: 2vh;
+    padding: 3.3vh;
+    border-radius: 3.2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: white; /* Default card background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    height: 60vh; /* Fixed height for uniformity */
+    width: 110vh; /* Fixed width for uniformity */
+    cursor: pointer;
+    box-sizing: border-box; /* Include padding and border in element’s total width and height */
+}
+
+/* Color classes for restaurant cards */
+.green-dark { background-color: #006400; } /* Dark green for 'Excellent' */
+.green { background-color: #32CD32; }      /* Green for 'Very Good' */
+.yellow { background-color: #FFFF00; }     /* Yellow for 'Good' */
+.orange { background-color: #FFA500; }     /* Orange for 'Average' */
+.white { background-color: #FFFFFF; }          /* White */
+
+/* Styling for restaurant info within cards */
+.restaurant-info {
+    margin-top: 5vh;
+    text-align: left; /* Align text to the left */
+}
+
+/* Headings in the restaurant info */
+.restaurant-info h2 {
+    font-size: 3.4vh;
+    color: black;
+    margin: 0; /* Remove default margin */
+}
+
+.restaurant-info h3 {
+    font-size: 3vh;
+    color: black;
+    margin: 0; /* Remove default margin */
+}
+
+/* Link styling within restaurant cards */
+.restaurant-card a {
+    color: black; /* Text color for links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link take up the whole card */
+}
+
+/* Hover effects for links in restaurant cards */
+.restaurant-card a:hover {
+    color: black; /* Ensure text color remains black on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Hover effects for restaurant cards */
+.restaurant-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Slick slider styling */
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure no overflow within slides */
+}
+
+.slick-list {
+    overflow: hidden; /* Hide overflow from slick list */
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    height: auto !important; /* Ensure track height adjusts to content */
+}
+
+.slick-slide > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Styling for restaurant details section */
+.restaurant-details {
+    margin-top: 13vh;
+    padding: 13vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom navigation arrows */
+.slick-prev, .slick-next {
+    z-index: 1; /* Ensure arrows are above the slider */
+}
+
+.slick-prev {
+    left: 2.4vh; /* Position for previous arrow */
+}
+
+.slick-next {
+    right: 2.4vh; /* Position for next arrow */
+}
+
+/* Custom dot styling */
+.slick-dots {
+    bottom: -25vh; /* Adjust position of dots */
+}
+
+.slick-dots li {
+    margin: 0 5px; /* Space between dots */
+}
+
+.slick-dots li button:before {
+    font-size: 7vh; /* Size of the dots */
+    color: #999; /* Color of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #e63946; /* Color of the active dot */
+}

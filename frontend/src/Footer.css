@@ -1,0 +1,64 @@
+/* Footer container */
+.footer {
+    width: 100%;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 15vh;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    position: relative; /* Ensure proper positioning */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Footer content */
+.footer-content {
+    max-width: 100vh; /* Set a max-width to prevent overflow */
+    margin: 0 auto; /* Center the content */
+    padding: 10vh;
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center; /* Center text */
+}
+
+/* Footer text */
+.footer-text {
+    font-size: 10vh;
+    margin: 0;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Footer links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none; /* Remove default underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Custom styles for specific elements */
+.footer-email {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Match text color */
+}
+
+.footer-icons {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Match text color */
+}
+
+/* Ensures that all child elements are constrained */
+.footer > * {
+    max-width: 100%; /* Prevent children from exceeding footer width */
+    box-sizing: border-box; /* Ensure padding and border are included */
+}

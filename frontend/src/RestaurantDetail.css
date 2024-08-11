@@ -1,0 +1,125 @@
+.restaurant-detail {
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f5f5, #ffffff); /* Soft gradient background */
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deep shadow for a 3D effect */
+    max-width: 700px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant font */
+    border: 1px solid #ddd; /* Subtle border */
+}
+
+.restaurant-detail h1 {
+    font-size: 6.1vh;
+    color: #333;
+    margin-bottom: 7vh;
+    border-bottom: 1.2vh solid #e63946; /* Accent underline */
+    padding-bottom: 4vh;
+    letter-spacing: 0.2vh; /* Slightly spaced letters */
+}
+
+.restaurant-detail p {
+    font-size: 3.9vh;
+    color: #444;
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+.restaurant-detail .info-label {
+    font-weight: bold;
+    color: #e63946; /* Accent color for labels */
+    font-size: 4.1vh; /* Consistent label size */
+    margin-bottom: 2vh; /* Space between label and value */
+    position: relative;
+    padding-left: 2.5vh; /* Space for the icon */
+    display: inline-block;
+}
+
+.restaurant-detail .info-label::before {
+    content: "•"; /* Custom bullet point or icon */
+    color: #333; /* Icon color */
+    font-size: 5vh; /* Icon size */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.restaurant-detail .info-value {
+    color: #666;
+    font-size: 5vh; /* Consistent value size */
+}
+
+.restaurant-detail .details-container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 5vh;
+    border-radius: 4vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 6vh; /* Space above the details container */
+}
+
+.restaurant-detail .details-container h2 {
+    font-size: 11vh;
+    color: #e63946;
+    border-bottom: 2vh solid #e63946;
+    padding-bottom: 3vh;
+    margin-bottom: 6vh;
+}
+
+.restaurant-detail .details-container p {
+    margin: 5vh 0;
+}
+
+.restaurant-detail form {
+    margin-top: 20px; /* Space before the form */
+}
+
+.restaurant-detail label {
+    display: block;
+    font-size: 4.5vh;
+    color: #333;
+    margin-bottom: 1vh;
+}
+
+/* Common styles for input fields */
+.restaurant-detail input[type="text"],
+.restaurant-detail input[type="number"],
+.restaurant-detail textarea {
+    width: 100%;
+    padding: 2vh;
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 4px;
+    font-size: 3.5vh;
+    box-sizing: border-box; /* Ensure padding and border are included in the element’s total width and height */
+    margin-bottom: 2vh;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-detail input[type="text"]:focus,
+.restaurant-detail input[type="number"]:focus,
+.restaurant-detail textarea:focus {
+    border-color: #e63946; /* Highlight color */
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.3); /* Focus shadow */
+    outline: none; /* Remove default focus outline */
+}
+
+.restaurant-detail button {
+    margin-top: 2vh;
+    padding: 2vh 5vh;
+    cursor: pointer;
+    background: linear-gradient(45deg, #e63946, #f1faee); /* Red-orange gradient background */
+    color: #ffffff;
+    border: none;
+    border-radius: 5vh;
+    font-size: 3.5vh;
+    font-weight: bold;
+    transition: background 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto; /* Center the button */
+}
+
+.restaurant-detail button:hover {
+    background: linear-gradient(45deg, #f1faee, #e63946);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
