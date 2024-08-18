@@ -4,7 +4,7 @@ import sqlite3
 import logging
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3008"}})  # Allow only the frontend origin
+CORS(app)  # Allow only the frontend origin
 
 logging.basicConfig(level=logging.DEBUG)
 
